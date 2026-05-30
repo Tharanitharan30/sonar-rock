@@ -1,14 +1,14 @@
-# Sonar: Rock vs Mine Prediction
+# Sonar: Rock vs Mine Prediction ⚓🪨
 
-This workspace contains a Jupyter Notebook that trains a Logistic Regression model to classify sonar signals as either a rock (`R`) or a mine (`M`). The notebook demonstrates data loading, preprocessing, training, evaluation, and a small predictive example.
+This workspace contains a Jupyter Notebook that trains a Logistic Regression model to classify sonar signals as either a rock (R) or a mine (M). The notebook demonstrates data loading, preprocessing, training, evaluation, and a small predictive example.
 
 Files
-- [Copy_of_Rock_vs_Mine_Prediction.ipynb](Copy_of_Rock_vs_Mine_Prediction.ipynb) — main notebook
-- [data/Copy of sonar data.csv](data/Copy%20of%20sonar%20data.csv) — dataset (CSV, no header)
+- [Copy_of_Rock_vs_Mine_Prediction.ipynb](Copy_of_Rock_vs_Mine_Prediction.ipynb) — 📓 main notebook
+- [data/Copy of sonar data.csv](data/Copy%20of%20sonar%20data.csv) — 🗂️ dataset (CSV, no header)
 
 Requirements
-- Python 3.8 or newer
-- Packages: `numpy`, `pandas`, `scikit-learn`, `jupyter`
+- Python 3.8 or newer 🐍
+- Packages: `numpy`, `pandas`, `scikit-learn`, `jupyter` 📦
 
 Quick setup
 
@@ -16,9 +16,9 @@ Quick setup
 
 ```bash
 python -m venv .venv
-\t# Windows
+# Windows
 .venv\Scripts\activate
-\t# macOS / Linux
+# macOS / Linux
 source .venv/bin/activate
 ```
 
@@ -36,13 +36,13 @@ Running the notebook
 jupyter notebook
 ```
 
-2. Open [Copy_of_Rock_vs_Mine_Prediction.ipynb](Copy_of_Rock_vs_Mine_Prediction.ipynb) in your browser and run cells in order.
+2. Open [Copy_of_Rock_vs_Mine_Prediction.ipynb](Copy_of_Rock_vs_Mine_Prediction.ipynb) in your browser and run cells in order. ▶️
 
 Notes
-- The notebook uses an absolute Windows path to load the CSV: `D:\\sonar rock\\data\\Copy of sonar data.csv`. If you move the project, either update that path in the notebook or place the CSV at the same path.
-- The predictive example at the end converts an input tuple to a NumPy array, reshapes it, then calls `model.predict(...)` and prints `R` (rock) or `M` (mine).
+- Path note: the notebook currently uses an absolute Windows path to load the CSV: `D:\\sonar rock\\data\\Copy of sonar data.csv`. If you move the project, either update that path in the notebook or place the CSV at the same path. To avoid this, prefer a relative path like `data/Copy of sonar data.csv`.
+- Prediction labels: the model outputs `R` (rock) or `M` (mine). The example prints a human-friendly message.
 
-How to use the predictive example (code excerpt)
+How to use the predictive example (code excerpt) 🧪
 
 ```python
 input_data_as_numpy_array = np.asarray(input_data)
@@ -54,4 +54,5 @@ else:
     print('The object is a Mine')
 ```
 
-If you'd like, I can also create a `requirements.txt` or convert the notebook into a standalone script for easier command-line use.
+Extras
+- If you'd like, I can also create a `requirements.txt` or convert the notebook into a standalone script for easier command-line use. Would you like that? ✅
